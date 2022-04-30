@@ -1,88 +1,112 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
-    background : url('/img/bg-desktop.svg');
+body {
+    background: url('/img/bg-desktop.svg');
     background-color: hsl(257, 40%, 49%);
     background-size: auto;
 }
 
-.container{
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    gap: 0px 0px;
-    padding: 15px 65px;
-}
-
-.container-left{
+.container {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
-.container-right{
+
+.container-right {
     color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 15px 30px;
-    
+
+    padding: 30px 30px;
+
 }
-.logo-img{
-    display: flex;
+
+.logo-img {
+
     padding: 50px 75px;
 }
 
 
-.heading-txt{
+.heading-txt {
     font-family: 'Poppins', sans-serif;
-    font-weight: 400,600;
+    font-weight: 400, 600;
     font-size: 2.25rem;
     max-width: 500px;
     margin-bottom: 20px;
 }
 
-.paragraph-txt{
+.paragraph-txt {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     max-width: 500px;
     font-size: 1.1rem;
     margin-bottom: 20px;
 
+    line-height: 1.8em;
+    margin: 25px 0;
+
 }
 
-.register-button{
-    border-radius: 30px;
+.register-button {
+    border-radius: 50px;
+
+    padding: 20px 70px;
     max-width: 250px;
-    padding: 10px 35px;
     border-style: none;
     font-size: 1.2rem;
     color: hsl(257, 40%, 49%);
 }
 
-.ill-img{
-    width: 100%;
-    
+.register-button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
 }
-.footer-txt{
+
+
+
+.ill-img {
+    width: 100%;
+
+}
+
+footer {
+    position: absolute;
+    height: 5rem;
+    width: 100%;
+    bottom: 0
+}
+
+.footer-txt {
     font-family: 'Poppins', sans-serif;
     color: white;
     font-size: 1.2rem;
     text-align: center;
     margin-top: 25px;
 }
-.footer-txt a{
+
+.footer-txt a {
     text-decoration: none;
     color: #fff;
     font-weight: 700;
 }
 
-@media only screen and (max-width: 768px){
-    .container{
-        display: grid; 
-         grid-template-columns: 1fr; 
-         gap: 0px 0px; 
+@media only screen and (max-width: 980px) {
+    .container {
+        display: flex;
+        flex-direction: column
+    }
+
+    img {
+        max-width: 80%;
+    }
+
+    .container-right {
+        text-align: center;
+    }
+
+    footer {
+        position: inherit;
     }
 }
